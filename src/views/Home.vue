@@ -20,7 +20,7 @@
                             single-line
                         ></v-text-field>
                       </div>
-      <v-row dense>
+      <v-row dense v-if="filteredCourses.length">
         <v-col
           v-for="card in filteredCourses"
           :key="card.name"
@@ -28,6 +28,7 @@
         >
         <v-hover v-slot="{ isHovering, props }">
           <v-card v-bind="props">
+            <router-link :to="'/course/' + card.id">
             <v-img
               :src="card.preview_image"
               class="align-end"
@@ -44,10 +45,12 @@
           </div>
         </v-expand-transition>
             </v-img>
-            
+          </router-link>
             <v-card-actions>
               
-              <v-card-title class="text" v-text="card.name"></v-card-title>
+              <router-link style="text-decoration: none; color: inherit;" :to="'/course/' + card.id">
+                <v-card-title class="text" v-text="card.name"></v-card-title>
+              </router-link>
 
               <v-spacer></v-spacer>
 
@@ -58,6 +61,7 @@
         </v-hover>
         </v-col>
       </v-row>
+      <div v-else>Курсы не найдены :(</div>
     </v-container>
   </v-card>
 </template>
