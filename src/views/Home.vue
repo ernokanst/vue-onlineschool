@@ -8,19 +8,41 @@
   >
 
     <v-container fluid>
+      <div class="searchBar">
+      <v-text-field
+                            :model-value="courseSearchQuery"
+                            @update:model-value="setCourseSearchQuery"
+                            label="Поиск курса"
+                            append-inner-icon="mdi-magnify"
+                            density="compact"
+                            variant="solo"
+                            hide-details
+                            single-line
+                        ></v-text-field>
+                      </div>
       <v-row dense>
         <v-col
           v-for="card in filteredCourses"
           :key="card.name"
           :cols="4"
         >
-          <v-card>
+        <v-hover v-slot="{ isHovering, props }">
+          <v-card v-bind="props">
             <v-img
               :src="card.preview_image"
               class="align-end"
               height="400px"
               cover
             >
+            <v-expand-transition>
+          <div
+            v-if="isHovering"
+            class="d-flex transition-fast-in-fast-out bg-primary v-card--reveal text-h4"
+            style="height: 100%;"
+            v-text="card.description"
+          >
+          </div>
+        </v-expand-transition>
             </v-img>
             
             <v-card-actions>
@@ -33,6 +55,7 @@
 
             </v-card-actions>
           </v-card>
+        </v-hover>
         </v-col>
       </v-row>
     </v-container>
@@ -40,14 +63,14 @@
 </template>
 
 <script>
-  import { mapState, mapGetters, mapActions, mapMutations } from 'vuex';
+  import { mapMutations, mapState, mapGetters, mapActions } from 'vuex';
   export default {
     data() {
         return {}
     },
     computed: {
         ...mapState({
-            courseSearchQuery: state => state.courses.courseSearchQuery,
+            courseSearchQuery: 'courses/courseSearchQuery',
             isLoading: state => state.courses.isLoading,
             courses: state => state.courses.courses
         }),
@@ -56,6 +79,9 @@
         })
     },
     methods: {
+      ...mapMutations({
+            setCourseSearchQuery: 'courses/setCourseSearchQuery'
+        }),
         ...mapActions({
             loadingCourses: 'courses/loadingCourses'
         })

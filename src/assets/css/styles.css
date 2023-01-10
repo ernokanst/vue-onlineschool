@@ -9,3 +9,17 @@ h1 {
 .infoblock p {
     font-size: 24px;
 }
+.searchBar {
+    margin: 16px auto;
+}
+.v-card--reveal {
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+    opacity: .9;
+    position: absolute;
+    width: 100%;
+}
+.v-footer {
+    padding: 0px;
+}

@@ -16,6 +16,11 @@ const routes = [
       },
     ],
   },
+  {
+    path: '/course/:id',
+    name: 'Course',
+    component: () => import('@/components/HelloWorld.vue'),
+  },
 ]
 
 const router = createRouter({
