@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Физика",
+    "preview_image": "https://get.pxhere.com/photo/light-museum-show-human-blue-electricity-lightning-energy-high-voltage-thunder-flash-thunderstorm-demonstration-experiment-physics-discharge-artificial-lightning-museum-of-technology-tesla-coil-electrical-supply-experimental-physics-electric-shielding-nikola-tesla-tesla-transformer-resonance-transformer-high-frequency-ac-voltage-faradayscher-cage-faraday-cage-faraday-speed-1126030.jpg",
+    "description": "Углубление в основы физики"
+  },
+  {
+    "id": 2,
+    "name": "Информатика",
+    "preview_image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Computer-science-education.jpg",
+    "description": "Предмет"
+  },
+  {
+    "id": 3,
+    "name": "Английский язык",
+    "preview_image": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "description": "London is the capital of the United Kingdom"
+  },
+  {
+    "id": 4,
+    "name": "Предмет",
+    "preview_image": "/images/default.jpeg",
+    "description": "Предмет"
+  },
+  {
+    "id": 5,
+    "name": "Предмет",
+    "preview_image": "/images/default.jpeg",
+    "description": "Предмет"
+  },
+  {
+    "id": 6,
+    "name": "Предмет",
+    "preview_image": "/images/default.jpeg",
+    "description": "Предмет"
+  },
+  {
+    "id": 7,
+    "name": "Предмет",
+    "preview_image": "/images/default.jpeg",
+    "description": "Предмет"
+  },
+  {
+    "id": 8,
+    "name": "Предмет",
+    "preview_image": "/images/default.jpeg",
+    "description": "Предмет"
+  },
+  {
+    "id": 9,
+    "name": "Предмет",
+    "preview_image": "/images/default.jpeg",
+    "description": "Предмет"
+  },
+  {
+    "id": 10,
+    "name": "Предмет",
+    "preview_image": "/images/default.jpeg",
+    "description": "Предмет"
+  }
+]

@@ -40,6 +40,7 @@
 </template>
 
 <script>
+  import { mapState, mapGetters, mapActions, mapMutations } from 'vuex';
   export default {
     data: () => ({
       cards: [
@@ -48,5 +49,24 @@
         { title: 'Английский язык', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 4 },
       ],
     }),
-  }
+    computed: {
+        ...mapState({
+            courseSearchQuery: state => state.courses.courseSearchQuery,
+            isLoading: state => state.courses.isLoading,
+            courses: state => state.courses.courses
+        }),
+        ...mapGetters({
+            filteredCourses: 'courses/filteredCourses'
+        })
+    },
+    methods: {
+        ...mapActions({
+            loadingCourses: 'courses/loadingCourses'
+        })
+    },
+    mounted() {
+        document.title = 'Список новостей';
+        this.loadingCourses();
+    }
+}
 </script>
