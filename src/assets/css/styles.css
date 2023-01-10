@@ -10,7 +10,11 @@ h1 {
     font-size: 24px;
 }
 .searchBar {
+    display: flex;
     margin: 16px auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
 }
 .v-card--reveal {
     align-items: center;

@@ -3,6 +3,7 @@ import axios from 'axios';
 export const coursesModule = {
     state: () => ({
         courseSearchQuery: '',
+        courseSubject: 0,
         isLoading: false,
         courses: [],
         filteredCourses: []
@@ -10,11 +11,10 @@ export const coursesModule = {
     getters: {
         filteredCourses(state) {
             return state.courses.filter(element => 
-                element.name?.toLowerCase().includes(state.courseSearchQuery.toLowerCase()) || element.description?.toLowerCase().includes(state.courseSearchQuery.toLowerCase()));
+                (element.name?.toLowerCase().includes(state.courseSearchQuery.toLowerCase()) || element.description?.toLowerCase().includes(state.courseSearchQuery.toLowerCase())) &&
+                (element.subject_id == state.courseSubject || state.courseSubject == 0)
+                );
         },
-        slidesCourses(state) {
-            return state.courses.filter(element => !!element.slider);
-        }
     },
     mutations: {
         setCourses(state, courses) {
@@ -22,6 +22,10 @@ export const coursesModule = {
         },
         setCourseSearchQuery(state, courseSearchQuery) {
             state.courseSearchQuery = courseSearchQuery;
+        },
+        setCourseSubject(state, courseSubject) {
+            console.log(courseSubject);
+            state.courseSubject = courseSubject.id;
         },
         setLoading(state, bool) {
             state.isLoading = bool;
@@ -58,6 +62,9 @@ export const coursesModule = {
         },
         clearCourseSearchQuery({commit}) {
             commit('setCourseSearchQuery', '');
+        },
+        clearCourseSubject({commit}) {
+            commit('setCourseSubject', 0);
         }
     },
     namespaced: true

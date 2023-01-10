@@ -15,11 +15,18 @@
                             label="Поиск курса"
                             append-inner-icon="mdi-magnify"
                             density="compact"
-                            variant="solo"
                             hide-details
-                            single-line
                         ></v-text-field>
-                      </div>
+        <v-select
+          v-model="filter"
+          :items="subjects"
+          @update:model-value="setCourseSubject"
+          item-title="subject"
+          item-value="id"
+          label="Категория"
+          return-object
+        ></v-select>
+      </div>
       <v-row dense v-if="filteredCourses.length">
         <v-col
           v-for="card in filteredCourses"
@@ -69,12 +76,22 @@
 <script>
   import { mapMutations, mapState, mapGetters, mapActions } from 'vuex';
   export default {
-    data() {
-        return {}
+    data () {
+      return {
+        filter: { subject: 'Все категории', id: 0 },
+        subjects: [
+          { subject: 'Все категории', id: 0 },
+          { subject: 'Информационные технологии', id: 101 },
+          { subject: 'Математика', id: 102 },
+          { subject: 'Языки и лингвистика', id: 103 },
+          { subject: 'Естественные науки', id: 104 },
+        ],
+      }
     },
     computed: {
         ...mapState({
             courseSearchQuery: 'courses/courseSearchQuery',
+            courseSubject: 'courses/courseSubject',
             isLoading: state => state.courses.isLoading,
             courses: state => state.courses.courses
         }),
@@ -84,7 +101,8 @@
     },
     methods: {
       ...mapMutations({
-            setCourseSearchQuery: 'courses/setCourseSearchQuery'
+            setCourseSearchQuery: 'courses/setCourseSearchQuery',
+            setCourseSubject: 'courses/setCourseSubject'
         }),
         ...mapActions({
             loadingCourses: 'courses/loadingCourses'

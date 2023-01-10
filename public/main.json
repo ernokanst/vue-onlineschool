@@ -1,60 +1,70 @@
 [
   {
     "id": 1,
+    "subject_id": 104,
     "name": "Физика",
     "preview_image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Physics-140901_%E2%80%93_symbols_for_several_natural_sciences.jpg",
     "description": "Углубление в основы физики"
   },
   {
     "id": 2,
+    "subject_id": 101,
     "name": "Информатика",
     "preview_image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Computer-science-education.jpg",
     "description": "Изучите основы программирования"
   },
   {
     "id": 3,
+    "subject_id": 103,
     "name": "Английский язык",
     "preview_image": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
     "description": "London is the capital of the United Kingdom"
   },
   {
     "id": 4,
+    "subject_id": 102,
     "name": "Предмет",
     "preview_image": "/images/default.jpeg",
     "description": "Предмет"
   },
   {
     "id": 5,
+    "subject_id": 101,
     "name": "Предмет",
     "preview_image": "/images/default.jpeg",
     "description": "Предмет"
   },
   {
     "id": 6,
+    "subject_id": 102,
     "name": "Предмет",
     "preview_image": "/images/default.jpeg",
     "description": "Предмет"
   },
   {
     "id": 7,
+    "subject_id": 103,
     "name": "Предмет",
     "preview_image": "/images/default.jpeg",
     "description": "Предмет"
   },
   {
     "id": 8,
+    "subject_id": 104,
     "name": "Предмет",
     "preview_image": "/images/default.jpeg",
     "description": "Предмет"
   },
   {
     "id": 9,
+    "subject_id": 101,
     "name": "Предмет",
     "preview_image": "/images/default.jpeg",
     "description": "Предмет"
   },
   {
     "id": 10,
+    "subject_id": 102,
     "name": "Предмет",
     "preview_image": "/images/default.jpeg",
     "description": "Предмет"
