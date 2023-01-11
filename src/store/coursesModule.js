@@ -39,11 +39,10 @@ export const coursesModule = {
             try {
                 commit('setLoading', true);
                 commit('setCourses', []);
-
                 const { data } = await axios.get('/main.json');
                 commit('setCourses', data);
             }
-            catch (e) {
+            catch (error) {
 
             }
             finally {
@@ -56,7 +55,7 @@ export const coursesModule = {
                 const { data } = await axios.get('/main.json');
                 return data.find(el => el.id == id);
             }
-            catch (e) {
+            catch (error) {
 
             }
         },

@@ -23,50 +23,50 @@
   {
     "id": 4,
     "subject_id": 102,
-    "name": "Предмет",
+    "name": "Линейная алгебра",
     "preview_image": "/images/default.jpeg",
-    "description": "Предмет"
+    "description": "Этот курс поможет вам разобраться с линейной алгеброй"
   },
   {
     "id": 5,
     "subject_id": 101,
-    "name": "Предмет",
-    "preview_image": "/images/default.jpeg",
-    "description": "Предмет"
+    "name": "Python",
+    "preview_image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Python_image.jpg",
+    "description": "Один из самых популярных языков программирования"
   },
   {
     "id": 6,
     "subject_id": 102,
-    "name": "Предмет",
-    "preview_image": "/images/default.jpeg",
-    "description": "Предмет"
+    "name": "Геометрия",
+    "preview_image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/600-cell_vertex_geometry.png",
+    "description": "Этот курс поможет вам разобраться со сложными геометрическими концепциями"
   },
   {
     "id": 7,
     "subject_id": 103,
-    "name": "Предмет",
-    "preview_image": "/images/default.jpeg",
-    "description": "Предмет"
+    "name": "Испанский язых",
+    "preview_image": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "description": "¿Habla español?"
   },
   {
     "id": 8,
     "subject_id": 104,
-    "name": "Предмет",
-    "preview_image": "/images/default.jpeg",
-    "description": "Предмет"
+    "name": "Биология",
+    "preview_image": "https://free-vectors.net/_ph/13/2/159252799.jpg",
+    "description": "Биология – наука о живых существах и их взаимодействии со средой обитания"
   },
   {
     "id": 9,
     "subject_id": 101,
-    "name": "Предмет",
-    "preview_image": "/images/default.jpeg",
-    "description": "Предмет"
+    "name": "Большие данные",
+    "preview_image": "https://upload.wikimedia.org/wikipedia/commons/4/46/BigData_2267x1146_white.png",
+    "description": "Научитесь обрабатывать и анализировать большие данные"
   },
   {
     "id": 10,
     "subject_id": 102,
-    "name": "Предмет",
+    "name": "Дискретная математика",
     "preview_image": "/images/default.jpeg",
-    "description": "Предмет"
+    "description": "Дискретная математика – часть математики, изучающая дискретные математические структуры, такие как графы и утверждения в логике"
   }
 ]
