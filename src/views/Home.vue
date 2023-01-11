@@ -50,6 +50,7 @@
               :src="card.preview_image"
               class="align-end"
               height="400px"
+              :alt="card.description"
               cover
             >
             <v-expand-transition>
