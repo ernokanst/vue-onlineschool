@@ -1,4 +1,5 @@
 <template>
+  <main>
   <div class="infoblock">
     <h1>Добро пожаловать!</h1>
     <p>Выберите курс и приступайте к обучению!</p>
@@ -24,6 +25,15 @@
           item-title="subject"
           item-value="id"
           label="Категория"
+          return-object
+        ></v-select>
+        <v-select
+          v-model="sort"
+          :items="sortTypes"
+          @update:model-value="setSortCourses"
+          item-title="sortType"
+          item-value="id"
+          label="Сортировка"
           return-object
         ></v-select>
       </div>
@@ -60,7 +70,7 @@
               </router-link>
 
               <v-spacer></v-spacer>
-
+              <v-btn disabled color="surface-variant" variant="text" prepend-icon="mdi-star" >{{ card.rating }}</v-btn>
               <v-btn size="small" color="surface-variant" variant="text" icon="mdi-bookmark"></v-btn>
 
             </v-card-actions>
@@ -71,6 +81,7 @@
       <div v-else>Курсы не найдены :(</div>
     </v-container>
   </v-card>
+</main>
 </template>
 
 <script>
@@ -85,6 +96,12 @@
           { subject: 'Математика', id: 102 },
           { subject: 'Языки и лингвистика', id: 103 },
           { subject: 'Естественные науки', id: 104 },
+        ],
+        sort: { sortType: 'Не выбрано', id: 0 },
+        sortTypes: [
+          { sortType: 'Не выбрано', id: 0 },
+          { sortType: 'По алфавиту А → Я', id: 1 },
+          { sortType: 'По алфавиту Я → А', id: 2 },
         ],
       }
     },
@@ -102,7 +119,8 @@
     methods: {
       ...mapMutations({
             setCourseSearchQuery: 'courses/setCourseSearchQuery',
-            setCourseSubject: 'courses/setCourseSubject'
+            setCourseSubject: 'courses/setCourseSubject',
+            setSortCourses: 'courses/sortCourses'
         }),
         ...mapActions({
             loadingCourses: 'courses/loadingCourses'

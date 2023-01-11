@@ -17,6 +17,11 @@ const routes = [
     ],
   },
   {
+    path: '/course/add',
+    name: 'Course create',
+    component: () => import('@/components/Create.vue'),
+  },
+  {
     path: '/course/:id',
     name: 'Course',
     component: () => import('@/views/Course.vue'),

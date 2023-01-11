@@ -2,71 +2,91 @@
   {
     "id": 1,
     "subject_id": 104,
+    "rating": 4.2,
     "name": "Физика",
     "preview_image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Physics-140901_%E2%80%93_symbols_for_several_natural_sciences.jpg",
-    "description": "Углубление в основы физики"
+    "description": "Углубление в основы физики",
+    "lesson_count": 12
   },
   {
     "id": 2,
     "subject_id": 101,
+    "rating": 4.7,
     "name": "Информатика",
     "preview_image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Computer-science-education.jpg",
-    "description": "Изучите основы программирования"
+    "description": "Изучите основы программирования",
+    "lesson_count": 26
   },
   {
     "id": 3,
     "subject_id": 103,
+    "rating": 5.0,
     "name": "Английский язык",
     "preview_image": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "description": "London is the capital of the United Kingdom"
+    "description": "London is the capital of the United Kingdom",
+    "lesson_count": 42
   },
   {
     "id": 4,
     "subject_id": 102,
+    "rating": 4.4,
     "name": "Линейная алгебра",
     "preview_image": "/images/default.jpeg",
-    "description": "Этот курс поможет вам разобраться с линейной алгеброй"
+    "description": "Этот курс поможет вам разобраться с линейной алгеброй",
+    "lesson_count": 18
   },
   {
     "id": 5,
     "subject_id": 101,
+    "rating": 4.9,
     "name": "Python",
     "preview_image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Python_image.jpg",
-    "description": "Один из самых популярных языков программирования"
+    "description": "Один из самых популярных языков программирования",
+    "lesson_count": 35
   },
   {
     "id": 6,
     "subject_id": 102,
+    "rating": 4.3,
     "name": "Геометрия",
     "preview_image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/600-cell_vertex_geometry.png",
-    "description": "Этот курс поможет вам разобраться со сложными геометрическими концепциями"
+    "description": "Этот курс поможет вам разобраться со сложными геометрическими концепциями",
+    "lesson_count": 18
   },
   {
     "id": 7,
     "subject_id": 103,
+    "rating": 4.8,
     "name": "Испанский язых",
     "preview_image": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "description": "¿Habla español?"
+    "description": "¿Habla español?",
+    "lesson_count": 42
   },
   {
     "id": 8,
     "subject_id": 104,
+    "rating": 4.4,
     "name": "Биология",
     "preview_image": "https://free-vectors.net/_ph/13/2/159252799.jpg",
-    "description": "Биология – наука о живых существах и их взаимодействии со средой обитания"
+    "description": "Биология – наука о живых существах и их взаимодействии со средой обитания",
+    "lesson_count": 28
   },
   {
     "id": 9,
     "subject_id": 101,
+    "rating": 4.9,
     "name": "Большие данные",
     "preview_image": "https://upload.wikimedia.org/wikipedia/commons/4/46/BigData_2267x1146_white.png",
-    "description": "Научитесь обрабатывать и анализировать большие данные"
+    "description": "Научитесь обрабатывать и анализировать большие данные",
+    "lesson_count": 27
   },
   {
     "id": 10,
     "subject_id": 102,
+    "rating": 4.3,
     "name": "Дискретная математика",
     "preview_image": "/images/default.jpeg",
-    "description": "Дискретная математика – часть математики, изучающая дискретные математические структуры, такие как графы и утверждения в логике"
+    "description": "Дискретная математика – часть математики, изучающая дискретные математические структуры, такие как графы и утверждения в логике",
+    "lesson_count": 28
   }
 ]

@@ -1,4 +1,5 @@
 <template>
+  <footer>
     <v-footer class="d-flex flex-column">
       <div class="bg-primary d-flex w-100 align-center px-4">
         <strong>Присоединяйтесь к нам в соцсетях!</strong>
@@ -19,6 +20,7 @@
         ©{{ new Date().getFullYear() }} — <strong>Онлайн-школа</strong>
       </div>
     </v-footer>
+  </footer>
   </template>
 
 <script>
