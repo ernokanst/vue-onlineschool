@@ -33,6 +33,6 @@ export default defineConfig({
     ],
   },
   server: {
-    port: 3000,
+    host: 'webexam2023.std-2204.ist.mospolytech.ru',
   },
 })
